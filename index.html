@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SUPAA NIGGAA ORDER(SLAVE)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍔 JolliOrder</h1>
+        <p>Welcome to our restaurant!</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#cart">Cart</a>
+    </nav>
+
+    <main>
+
+        <section id="menu">
+
+            <h2>Our Menu</h2>
+
+            <div class="menu-container">
+
+                <div class="food-card" data-name="Chickenjoy" data-price="99">
+
+                    <img src="images/chickenjoy.jpg.webp" alt="Chickenjoy">
+
+                    <h3>Chickenjoy</h3>
+                    <p>₱99.00</p>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+
+
+                <div class="food-card" data-name="Yumburger" data-price="50">
+
+                    <img src="images/yumburger.jpg.jpg" alt="Yumburger">
+
+                    <h3>Yumburger</h3>
+                    <p>₱50.00</p>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+
+
+                <div class="food-card" data-name="Jolly Spaghetti" data-price="75">
+
+                    <img src="images/spaghetti.jpg.jpg" alt="Jolly Spaghetti">
+
+                    <h3>Jolly Spaghetti</h3>
+                    <p>₱75.00</p>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+
+
+                <div class="food-card" data-name="Fries" data-price="45">
+
+                    <img src="images/fries.jpg.jpg" alt="Fries">
+
+                    <h3>Fries</h3>
+                    <p>₱45.00</p>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="cart">
+
+            <h2>Your Cart</h2>
+
+            <div id="cart-items">
+
+                <p>Your cart is currently empty.</p>
+
+            </div>
+
+            <h3>
+                Total: ₱<span id="cart-total">0.00</span>
+            </h3>
+
+            <button id="checkout-button">Checkout</button>
+
+        </section>
+
+
+        <!-- Payment Window -->
+
+        <div id="payment-modal" class="modal">
+
+            <div class="payment-box">
+
+                <button id="close-payment" class="close-button">✕</button>
+
+                <h2>Checkout</h2>
+
+                <p>Your total is:</p>
+
+                <h3>₱<span id="payment-total">0.00</span></h3>
+
+                <h3>Choose Payment Method</h3>
+
+                <div class="payment-options">
+
+                    <label>
+                        <input type="radio" name="payment" value="Cash">
+                        💵 Cash
+                    </label>
+
+                    <label>
+                        <input type="radio" name="payment" value="Card">
+                        💳 Card
+                    </label>
+
+                    <label>
+                        <input type="radio" name="payment" value="GCash">
+                        📱 GCash
+                    </label>
+
+                </div>
+
+                <button id="place-order">Place Order</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Loading Window -->
+
+        <div id="loading-modal" class="modal">
+
+            <div class="loading-box">
+
+                <h2>Processing Your Order</h2>
+
+                <p>Please wait...</p>
+
+                <div class="progress-container">
+
+                    <div id="progress-bar"></div>
+
+                </div>
+
+                <h3>
+                    <span id="progress-text">0</span>%
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- Order Success Window -->
+
+        <div id="success-modal" class="modal">
+
+            <div class="success-box">
+
+                <div class="success-icon">✓</div>
+
+                <h2>Thank You for Ordering!</h2>
+
+                <p>Your order has been successfully placed.</p>
+
+                <button id="done-button">Done</button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 JolliOrder</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
